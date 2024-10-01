@@ -3,6 +3,8 @@ import VideoContainer from "@/components/video-container";
 import { getFilteredVideos, getTutorialVideos } from "@/lib/queries";
 import { Suspense } from "react";
 
+export const dynamic = "force-dynamic";
+
 export default async function Home() {
   return (
     <div className="grid h-screen grid-rows-[1fr_auto_1fr] md:grid-cols-3">
