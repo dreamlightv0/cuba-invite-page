@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 export default async function Home() {
   return (
-    <div className="grid h-screen grid-rows-[1fr_auto_1fr] md:grid-cols-3">
+    <div className="grid h-screen grid-rows-[1fr_auto_1fr] sm:grid-cols-3">
       <Suspense>
         <VideoContainer position="left" title="Tutoriales" videosCallback={getTutorialVideos} />
       </Suspense>
