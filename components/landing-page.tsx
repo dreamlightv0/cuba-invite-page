@@ -114,18 +114,21 @@ export default function LandingPage() {
               </DialogHeader>
               <div className="flex flex-col gap-4">
                 {link.url !== "" ? (
-                  <Link
-                    href={`https://discord.gg/invite/${link.url}`}
-                    target="_blank"
-                  >
-                    <Button
-                      className="flex w-full flex-row gap-2"
-                      variant="outline"
+                  <>
+                    <Link
+                      href={`https://discord.gg/invite/${link.url}`}
+                      target="_blank"
                     >
-                      <LinkIcon className="h-5 w-5" />
-                      https://discord.gg/invite/{link.url}
-                    </Button>
-                  </Link>
+                      <Button
+                        className="flex w-full flex-row gap-2"
+                        variant="outline"
+                      >
+                        <LinkIcon className="h-5 w-5" />
+                        https://discord.gg/invite/{link.url}
+                      </Button>
+                    </Link>
+                    <span className="text-sm text-muted-foreground text-center">Este link expirará en 5 minutos</span>
+                  </>
                 ) : (
                   <Button
                     className="w-full"
